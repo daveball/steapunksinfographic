@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STEAM Punks</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+
+
+    #hexagon {
+        width: 100px;
+        height: 55px;
+        background: red;
+        position: relative;
+    }
+    #hexagon:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid red;
+    }
+    #hexagon:after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid red;
+    }
+    #oval {
+        width: 200px;
+        height: 100px;
+        background: red;
+        -moz-border-radius: 100px / 50px;
+        -webkit-border-radius: 100px / 50px;
+        border-radius: 100px / 50px;
+    }
+
+    #circle {
+        width: 100px;
+        height: 100px;
+        background: red;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+    #square {
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+
+    #diamond-narrow {
+        width: 0;
+        height: 0;
+        border: 50px solid transparent;
+        border-bottom: 70px solid red;
+        position: relative;
+        top: -50px;
+    }
+    #diamond-narrow:after {
+        content: '';
+        position: absolute;
+        left: -50px; top: 70px;
+        width: 0;
+        height: 0;
+        border: 50px solid transparent;
+        border-top: 70px solid red;
+    }
+    #pointer {
+        width: 600px;
+        height: 60px;
+        position: relative;
+        background: darkslategrey;
+        color: yellow;
+    }
+    #pointer:after {
+        content: "";
+        position: absolute;
+
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 30px solid white;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+    }
+    #pointer:before {
+        content: "";
+        position: absolute;
+        right: -30px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 30px solid darkslategrey;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+    }
+   h1{
+       font-family: OpenDyslexic3,Calibri, monospace;
+       font-size: large;
+   }
+
+</style>
+
+</head>
+<body>
+<div class="container">
+
+    <div class="row" style="background-color: purple">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8"> <img src="images/steampunksbanner.PNG"  style ="border-radius: 20px; width:90% ;padding:4px; align-content: center"/> </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8" >
+
+            <div id="pointer"><div style="margin-left: 40px; margin-top: 10px"><h1>Progress through skills development</h1></div></div>
+
+        </div>
+        <div class="col-sm-4" style="background-color: purple; color: white">
+
+            <div ><h1>Different shaped badges for Skill Areas</h1></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8" style="background-color: white">
+        <div></div>
+        <div><h1>White Belt</h1></div>
+
+        </div>
+        <div class="col-sm-4" style="background-color: purple; color: white">
+            <div id="square"><img src="images/atom.png" /></div>
+            <div><h1>Science</h1></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8" style="background-color: yellow">
+            <div></div>
+            <div><h1>Yellow Belt</h1></div>
+
+        </div>
+        <div class="col-sm-4">
+            <div id="hexagon"></div>
+            <div><h1>Technology</h1></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8" style="background-color: orange">
+            <div></div>
+            <div><h1>Orange Belt</h1></div>
+
+        </div>
+        <div class="col-sm-4" style="background-color: purple; color: white">
+            <div id="diamond-narrow"></div>
+            <div><h1>Engineering</h1></div>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-sm-8" style="background-color: blue">
+            <div></div>
+            <div><h1>Blue Belt</h1></div>
+
+        </div>
+        <div class="col-sm-4" style="background-color: purple; color: white">
+            <div id="oval"></div>
+            <div><h1>Art</h1></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8" style="background-color: brown">
+            <div></div>
+            <div><h1>Brown Belt</h1></div>
+
+        </div>
+        <div class="col-sm-4" style="background-color: purple; color: white">
+            <div id="circle"></div>
+            <div><h1>Maths</h1></div></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8" style="background-color: black">
+            <div></div>
+            <div><h1>Black Belt</h1></div>
+
+        </div>
+        <div class="col-sm-4" style="background-color: purple; color: white"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+    </div>
+
+</div>
+</body>
+</html>
