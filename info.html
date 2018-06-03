@@ -11,11 +11,249 @@
 <style>
 
 
+
+
+    .hexagon-badge {
+        width: 100px;
+        height: 55px;
+        background: white;
+        position: relative;
+        padding-left: 25px;
+
+    }
+    .hexagon-badge:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid white;
+
+    }
+    .hexagon-badge:after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid white;
+
+    }
+
+
+    .hexagon-badge-brown {
+        width: 100px;
+        height: 55px;
+        background: brown;
+        position: relative;
+        padding-left: 25px;
+
+    }
+    .hexagon-badge-brown:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid brown;
+
+    }
+    .hexagon-badge-brown:after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid brown;
+
+    }
+
+    .hexagon-badge-yellow {
+        width: 100px;
+        height: 55px;
+        background: yellow;
+        position: relative;
+        padding-left: 25px;
+
+    }
+    .hexagon-badge-yellow:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid yellow;
+
+    }
+    .hexagon-badge-yellow:after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid yellow;
+
+    }
+    .hexagon-badge-black {
+        width: 100px;
+        height: 55px;
+        background: black;
+        position: relative;
+        padding-left: 25px;
+
+    }
+    .hexagon-badge-black:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid black;
+
+    }
+    .hexagon-badge-black:after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid black;
+
+    }
+    .hexagon-badge-orange {
+        width: 100px;
+        height: 55px;
+        background: orange;
+        position: relative;
+        padding-left: 25px;
+
+    }
+    .hexagon-badge-orange:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid orange;
+
+    }
+    .hexagon-badge-orange:after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid orange;
+
+    }
+
+    .hexagon-badge-blue {
+        width: 100px;
+        height: 55px;
+        background: blue;
+        position: relative;
+        padding-left: 25px;
+
+    }
+    .hexagon-badge-blue:before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 25px solid blue;
+
+    }
+    .hexagon-badge-blue:after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 25px solid blue;
+
+    }
     #hexagon {
         width: 100px;
         height: 55px;
         background: red;
         position: relative;
+        padding-left: 25px;
+    }
+
+    svg {
+        position: absolute;
+        top: 0;
+        left: 25px;
+        width: 100%;
+
+        height: 100%;}
+
+    .tech-image {
+        max-width: 50px;
+        max-height: 50px;
+
+    }
+    .art-image {
+        max-width: 60px;
+        max-height: 60px;
+
+    }
+
+    .science-image {
+        max-width: 60px;
+        max-height: 60px;
+
+    }
+    .maths-image {
+        max-width: 60px;
+        max-height: 60px;
+
+    }
+    .engineering-image {
+        position: relative;
+        left:-25px;
+        top:25px;
+        max-width: 50px;
+        max-height: 50px;
+        z-index: 2;
+
     }
     #hexagon:before {
         content: "";
@@ -40,12 +278,14 @@
         border-top: 25px solid red;
     }
     #oval {
-        width: 200px;
+        width: 120px;
         height: 100px;
         background: red;
-        -moz-border-radius: 100px / 50px;
-        -webkit-border-radius: 100px / 50px;
-        border-radius: 100px / 50px;
+        -moz-border-radius: 60px / 50px;
+        -webkit-border-radius: 60px / 50px;
+        border-radius: 60px / 50px;
+        padding-left:30px;
+        padding-top: 20px;
     }
 
     #circle {
@@ -55,29 +295,35 @@
         -moz-border-radius: 50px;
         -webkit-border-radius: 50px;
         border-radius: 50px;
+        padding-left: 15px;
+        padding-top: 20px;
     }
     #square {
         width: 100px;
         height: 100px;
         background: red;
+        padding-left:20px;
+        padding-top:20px;
     }
 
     #diamond-narrow {
         width: 0;
         height: 0;
         border: 50px solid transparent;
-        border-bottom: 70px solid red;
+        border-bottom: 55px solid red;
         position: relative;
         top: -50px;
+
     }
     #diamond-narrow:after {
         content: '';
         position: absolute;
-        left: -50px; top: 70px;
+        left: -50px; top: 55px;
         width: 0;
         height: 0;
         border: 50px solid transparent;
-        border-top: 70px solid red;
+        border-top: 55px solid red;
+        z-index: 1;
     }
     #pointer {
         width: 600px;
@@ -85,6 +331,7 @@
         position: relative;
         background: darkslategrey;
         color: yellow;
+        padding-top: 3px;
     }
     #pointer:after {
         content: "";
@@ -113,96 +360,219 @@
        font-family: OpenDyslexic3,Calibri, monospace;
        font-size: large;
    }
+    p{
+        font-family: OpenDyslexic3,Calibri, monospace;
+        font-size: medium;
+    }
+    ul{
+           font-family: OpenDyslexic3,Calibri, monospace;
+           font-size: small;
+       }
 
 </style>
 
 </head>
-<body style="background-color: purple">
+<body >
 <div class="container">
 
     <div class="row" style="background-color: purple">
         <div class="col-sm-2"></div>
-        <div class="col-sm-8"> <img src="images/steampunksbanner.PNG"  style ="border-radius: 20px; width:90% ;padding:4px; align-content: center"/> </div>
+        <div class="col-sm-8"> <br><img src="images/steampunksbanner.PNG"  style ="border-radius: 20px; width:90% ;padding:4px; align-content: center"/> </div>
         <div class="col-sm-2"></div>
     </div>
 
-    <div class="row">
+    <div class="row" style="background-color: purple">
         <div class="col-sm-8" >
-
+            <br>
             <div id="pointer"><div style="margin-left: 40px; margin-top: 10px"><h1>Progress through skills development</h1></div></div>
 
         </div>
         <div class="col-sm-4" style="background-color: purple; color: white">
 
-            <div ><h1>Different shaped badges for Skill Areas</h1></div>
+            <div ><br><h1>Different shaped badges for Skill Areas:</h1><br></div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-8" style="background-color: white">
-        <div></div>
-        <div><h1>White Belt</h1></div>
-
+    <div class="row" style="background-color: purple">
+        <div class="col-sm-2" style="margin-top: 30px">
+        <div class="hexagon-badge"><img class="tech-image" src="images/raspberry-pi.svg" /></div>
+        </div>
+        <div class="col-sm-6"  style="background-color: white">
+            <h1>White Belt</h1>
+            <p>These are entry level skills and mainly focus on learning the tools and health and safety aspects of a specific skill.
+            </p>
+            <p>Examples of these types of skills for a Raspberry Pi white belt badge would be:
+            </p>
+            <ul>
+                <li>
+                Draw a diagram explaining the  function of the components on a Raspberry Pi.
+                </li>
+            <li>
+                Learn how to connect up a  Raspberry Pi.
+            </li>
+            <li>
+                Use a Raspberry Pi to switch on a LED.
+            </li>
+            </ul>
+            <p></p>
         </div>
         <div class="col-sm-4" style="background-color: purple; color: white">
-            <div id="square"><img src="images/atom.png" /></div>
+            <div id="square"><img class="science-image" src="images/science.svg"  /></div>
             <div><h1>Science</h1></div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-8" style="background-color: yellow">
-            <div></div>
-            <div><h1>Yellow Belt</h1></div>
+    <div class="row" style="background-color: purple">
+        <div class="col-sm-2" style="margin-top: 30px">
+            <div class="hexagon-badge-yellow"><img class="tech-image" src="images/css.svg"/></div>
+        </div>
+        <div class="col-sm-6" style="background-color: yellow">
+
+            <div><h1>Yellow Belt</h1>
+                <p>Once someone has completed three core white belt level skills they can move on to yellow belt
+                    projects
+                    which will build on the knowledge and skills they have already gained.
+                </p><p>
+                    Examples of these types of skills for a CSS Yellow belt badge would be:
+                </p>
+                <ul>
+                    <li>
+                        How to make shapes using CSS.
+                    </li>
+                    <li>
+                        How to create an external style sheet and use in all your web pages.
+                    </li>
+                    <li>
+                        How to position items using CSS.
+                    </li>
+                </ul>
+
+            <p></p>
+            </div>
 
         </div>
         <div class="col-sm-4" style="background-color: purple; color: white">
-            <div id="hexagon"></div>
-            <div><h1>Technology</h1></div>
+            <div id="hexagon">
+                <svg>
+                    <img class="tech-image" src="images/artificial-intelligence.svg"/></svg>
+            </div>
+            <div><br><h1>Technology</h1></div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-8" style="background-color: orange">
-            <div></div>
+
+        <div class="col-sm-2" style="margin-top: 30px">
+            <div class="hexagon-badge-orange"><img class="tech-image" src="images/ARDUINO_SETUP.svg"/></div>
+        </div>
+        <div class="col-sm-6" style="background-color: orange; color: white">
             <div><h1>Orange Belt</h1></div>
-
+            <p>Once someone has completed three core yellow belt level skills they can move on to orange belt projects
+                which will build on the knowledge and skills they have already gained.
+            </p><p>
+                Examples of these types of skills for a Arduino Orange belt badge would be:
+            </p>
+            <ul>
+                <li>
+                    Controlling a Servo Motor.
+                </li>
+                <li>
+                    Creating a Oscillating Synthesizer.
+                </li>
+                <li>
+                    Working with am Arduino shield.
+                </li>
+            </ul>
+        <p></p>
         </div>
         <div class="col-sm-4" style="background-color: purple; color: white">
-            <div id="diamond-narrow"></div>
+            <div id="diamond-narrow"><img class="engineering-image" src="images/engineer.svg"/></div>
             <div><h1>Engineering</h1></div>
         </div>
-    </div>
-    <div class="row" >
-        <div class="col-sm-8" style="background-color: blue">
-            <div></div>
-            <div><h1>Blue Belt</h1></div>
 
+        <div class="col-sm-2" style="margin-top: 30px">
+            <div class="hexagon-badge-blue"><img class="tech-image" src="images/wordpress.svg"/></div>
+        </div>
+        <div class="col-sm-6" style="background-color: blue; color: white">
+
+            <div><h1>Blue Belt</h1></div>
+            <p>Once someone has completed three core orange belt level skills they can move on to blue belt projects
+                which will build on the knowledge and skills they have already gained.
+            </p><p>
+                Examples of these types of skills for a WordPress blue belt badge would be:
+            </p>
+            <ul>
+                <li>
+                    How to change  and configure the theme on WordPress.
+                </li>
+                <li>
+                    How to create a Photo slider using  a Plugin.
+                </li>
+                <li>
+                    How to back up your WordPress site.
+                </li>
+            </ul>
         </div>
         <div class="col-sm-4" style="background-color: purple; color: white">
-            <div id="oval"></div>
+            <div id="oval"><img class="art-image" src="images/palette.svg" /> </div>
             <div><h1>Art</h1></div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-8" style="background-color: brown; color: lightgoldenrodyellow">
-            <div></div>
-            <div><h1>Brown Belt</h1></div>
+    <div class="row" style="background-color: purple">
+        <div class="col-sm-2" style="margin-top: 30px">
+            <div class="hexagon-badge-brown" style="background-color: brown"><img class="tech-image" src="images/robot.svg"/></div>
+        </div>
+        <div class="col-sm-6" style="background-color: brown; color: lightgoldenrodyellow">
 
+            <div><h1>Brown Belt</h1></div>
+            <p>Once someone has completed three core orange belt level skills they can move on to blue belt projects
+                which will build on the knowledge and skills they have already gained.
+            </p><p>
+                Examples of these types of skills for a Robotic brown belt badge would be:
+            </p>
+            <ul>
+                <li>
+                    Build a Sumo Robot.
+                </li>
+                <li>
+                    Program a Maze solving robot.
+                </li>
+                <li>
+                   Use Open Computer Vision to follow a face.
+                </li>
+            </ul>
+            <p></p>
         </div>
         <div class="col-sm-4" style="background-color: purple; color: white">
-            <div id="circle"></div>
+            <div id="circle"><img class="maths-image" src="images/compass.svg"/> </div>
             <div><h1>Maths</h1></div></div>
     </div>
-    <div class="row">
-        <div class="col-sm-8" style="background-color: black; color: white">
-            <div></div>
-            <div><h1>Black Belt</h1></div>
+    <div class="row" style="background-color: purple">
+        <div class="col-sm-2" style="margin-top: 30px">
+            <div class="hexagon-badge-black"><img class="tech-image" src="images/3d-printer.svg"/> </div>
+        </div>
+        <div class="col-sm-6" style="background-color: black; color: white">
 
+            <div><h1>Black Belt</h1></div>
+            <p>Once someone has completed three core brown belt level skills they can move on to black belt projects.
+                These will be the most technically challenging level of skills and stretch the children's knowledge and utilise all the skills they have learned so  far.
+            </p><p>
+                Examples of these types of skills for a 3d Printing black belt badge would be:
+            </p>
+            <ul>
+                <li>
+                    Printing with multiple  types of filament in the same print.
+                </li>
+                <li>
+                    Designing  a print with multiple moving parts
+                </li>
+                <li>
+                    Advanced finishing techniques
+                </li>
+            </ul>
+            <p></p>
         </div>
         <div class="col-sm-4" style="background-color: purple; color: white"></div>
     </div>
     <div class="row">
-        <div class="col-sm">col-sm</div>
-        <div class="col-sm">col-sm</div>
-        <div class="col-sm">col-sm</div>
+        <div class="col-sm">The STEAM Punks concept &copy;Clyde Electronics CIC </div>
+        <div class="col-sm"><img src="images/logo.png"/></div>
+        <div class="col-sm"><div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></div>
     </div>
 
 </div>
